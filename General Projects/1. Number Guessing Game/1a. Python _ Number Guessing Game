@@ -1,1 +1,18 @@
+#Number Guessing Game
 
+secretnum=1010
+guess=-1
+i=0
+
+while guess!=secretnum:
+    guess=int(input("Enter your guess:"))
+    i=i+1
+
+    if guess>secretnum:
+        print("Too High")
+    elif guess<secretnum:
+        print("Too Low")
+    else:
+        print("Congratulations! Correct Guess!")
+        print("You guessed the secret number in", i, "guesses")
+        
