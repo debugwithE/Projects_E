@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class Game
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int guess=-1;
+        int secretnum=1010;
+        int i=0;
+        
+        while (secretnum!=guess)
+        { System.out.print("\nEnter your guess: ");
+        guess=sc.nextInt();
+            i+=1;
+            if (guess>secretnum)
+                System.out.print("\nToo high");
+            else if (guess<secretnum)
+                System.out.print("\nToo low");
+            else
+              {System.out.print("\nCongratulations! Correct Guess!");
+              System.out.print("\nCorrect Number Guesses in "+ i+ " chances\n");
+              }
+        }
+    }
+}
